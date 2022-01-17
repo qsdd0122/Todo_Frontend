@@ -5,6 +5,7 @@ import "./index.css";
 import Login from "./Login";
 import Box from "@material-ui/core/Box";
 import Typography from "@material-ui/core/Typography";
+import SignUp from "./SignUp";
 
 function CopyRight() {
     return (
@@ -25,6 +26,9 @@ class AppRouter extends React.Component {
                         <Switch>
                             <Route path="/login">
                                 <Login/>
+                            </Route>
+                            <Route path="/signup">
+                                <SignUp/>
                             </Route>
                             <Route path="/">
                                 <App/>
