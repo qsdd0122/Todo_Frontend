@@ -22,19 +22,19 @@ class App extends React.Component {
   }
 
   add = (item) => {
-    call("/todo", "POST", null).then((response) =>
+    call("/todo", "POST", item).then((response) =>
       this.setState({ items: response.data })
     );
   }
 
   delete = (item) => {
-    call("/todo", "DELETE", null).then((response) =>
+    call("/todo", "DELETE", item).then((response) =>
       this.setState({ items: response.data })
     );
   }
 
   update = (item) => {
-    call("/todo", "PUT", null).then((response) =>
+    call("/todo", "PUT", item).then((response) =>
       this.setState({ items: response.data })
     );
   }
